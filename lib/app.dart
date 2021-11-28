@@ -32,7 +32,6 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      key: UniqueKey(),
       routerDelegate: RoutemasterDelegate(routesBuilder: (_) {
         if (authorized) {
           return routesAuthorized(logout);
