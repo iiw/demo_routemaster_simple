@@ -18,7 +18,6 @@ RouteMap routesAuthorized(Function onSignedOut) => RouteMap(
         '/feed/profile/:id': (_) => MaterialPage(child: ProfilePage()),
         '/feed/profile/:id/details': (_) => MaterialPage(child: DetailsPage()),
         '/settings': (_) => MaterialPage(child: SettingsPage()),
-        '/settings/sign-out': (_) =>
-            MaterialPage(child: SignOutPage(onSignedOut)),
+        '/sign-out': (_) => MaterialPage(child: SignOutPage(onSignedOut)),
       },
     );

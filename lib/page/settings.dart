@@ -12,7 +12,7 @@ class SettingsPage extends StatelessWidget {
       Text('Settings page'),
       ElevatedButton(
           onPressed: () {
-            Routemaster.of(context).push("sign-out");
+            Routemaster.of(context).push("/sign-out");
           },
           child: Text("Go to sign out"))
     ])));
